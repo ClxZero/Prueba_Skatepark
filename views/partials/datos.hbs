@@ -1,0 +1,67 @@
+<div class="m-auto pt-1 text-center">
+<div class="py-4">
+  <h2>Datos del perfil</h2>
+  <p>Puedes modificar todo menos tu email y foto, <br>para eso debes eliminar tu perfil y crear uno nuevo</p>
+
+<div class="bg-light m-auto border rounded" style="max-width: 600px;">
+  <form>
+    <div class="form-group row w-50 m-auto py-4">
+      <div class="form-group col-12 col-sm-6">
+        <input id="HiddenID" value={{id}} style="display:none">
+        <label>Email</label>
+        <input id="actualizarEmail"class="form-control m-auto"  value={{email}} disabled/>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Nombre</label>
+        <input id="actualizarNombre"class="form-control m-auto" value={{nombre}} required/>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Password</label>
+        <input id="actualizarPass"type="password" class="form-control m-auto" value={{password}} required/>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Repita la password</label>
+        <input type="password" class="form-control m-auto" required/>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Años de experiencia</label>
+        <input id="actualizarAnos"class="form-control m-auto" value={{anos_experiencia}} required/>
+      </div>
+      <div class="form-group col-12 col-sm-6">
+        <label>Especialidad</label>
+        <input id="actualizarEspecialidad"class="form-control m-auto" value={{especialidad}} required/>
+      </div>
+    </div>
+    <div class="mb-1">
+      <button class="btn btn-primary" onclick="modificarUsuario()" >Actualizar</button>
+    </div>
+    <div>
+<button type="button" class="btn btn-danger mt-4" data-toggle="modal" data-target="#eliminacion">
+  Eliminar cuenta
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="eliminacion" tabindex="-1" aria-labelledby="econfirmareliminar" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">ESTAS A PUNTO DE ELIMINAR TU REGISTRO</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+    <h5 class="py-2">Estas 3213123123% segur@????</h2>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Me arrepentí</button>
+        <button type="button" class="btn btn-danger" onclick="eliminarUsuario()">Eliminar definitivamente</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </form>
+</div>
+</div>
+</div>

@@ -1,0 +1,34 @@
+body {
+    background-image: url("../imgs/skatebg1.jpg");
+    
+  }
+  
+  
+  input{
+      text-align: center;
+  }
+
+  .fotolista{
+      height: 80px;
+  }
+
+  table{
+    background-color: rgb(12, 11, 11);
+    max-width: 850px;
+    
+  }
+
+  footer{
+    background-color: rgb(12, 11, 11);
+  
+  }
+  
+  nav{
+    background-color: rgb(12, 11, 11);
+  }
+
+  .eliminar {
+    background-color: rgba(241, 22, 22, 0.178);
+    
+    max-width: 850px;
+  }
